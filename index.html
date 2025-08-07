@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <img src="https://img.freepik.com/free-photo/modern-futuristic-sci-fi-background_35913-2224.jpg" class="bg-img" />
+
+  <main class="game-wrapper">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="player-inputs">
+      <input type="text" id="player1" placeholder="Player X Name" />
+      <input type="text" id="player2" placeholder="Player O Name" />
+      <button id="startBtn">Start Game</button>
+    </div>
+
+    <div class="status" id="status"></div>
+
+    <div class="container">
+      <div class="game">
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+        <button class="box"></button>
+      </div>
+    </div>
+
+    <button id="resetBtn" class="hidden">Reset Game</button>
+  </main>
+
+  <audio id="clickSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+  <audio id="winSound" src="https://www.fesliyanstudios.com/play-mp3/6674" preload="auto"></audio>
+  <audio id="drawSound" src="https://www.fesliyanstudios.com/play-mp3/3874" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
