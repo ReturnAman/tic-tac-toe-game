@@ -72,6 +72,7 @@ function checkWinner() {
            board[a] === board[c];
   });
 }
+
 function resetGame() {
   board.fill('');
   boxes.forEach(box => box.textContent = '');
