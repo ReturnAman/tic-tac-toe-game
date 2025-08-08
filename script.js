@@ -23,7 +23,7 @@ function startGame() {
   const p1 = player1Input.value.trim();
   const p2 = player2Input.value.trim();
   if (!p1 || !p2) {
-    alert("Enter both player names!");
+    alert("Enter both player names");
     return;
   }
   playerNames.X = p1;
@@ -47,14 +47,14 @@ function handleBoxClick(e) {
   clickSound.play();
 
   if (checkWinner()) {
-    statusDiv.textContent = `${playerNames[currentPlayer]} Wins!`;
+    statusDiv.textContent = `${playerNames[currentPlayer]} Wins`;
     gameActive = false;
     winSound.play();
     return;
   }
 
   if (board.every(cell => cell !== '')) {
-    statusDiv.textContent = `It's a Draw!`;
+    statusDiv.textContent = `It's a Draw`;
     drawSound.play();
     gameActive = false;
     return;
@@ -83,3 +83,4 @@ function resetGame() {
 startBtn.addEventListener('click', startGame);
 resetBtn.addEventListener('click', resetGame);
 boxes.forEach(box => box.addEventListener('click', handleBoxClick));
+
